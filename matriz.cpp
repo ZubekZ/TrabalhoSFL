@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 int main() {
@@ -47,10 +49,9 @@ int main() {
     // impressão formatada da matriz resultado (Usei ajuda do GPT)
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cout << matrizr[i * n + j];
-            if (j < n - 1) cout << " ";
+            cout << setw(6) << matrizr[i * n + j];
         }
-        cout << "\n";
+        cout << "\n\n";
     }
 
 // Assinado Zbk e GPT
