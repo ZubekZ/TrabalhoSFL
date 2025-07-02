@@ -1,5 +1,3 @@
-# Trabalho Prático: Bash, Git e Make
-
 **Aluno:** João Pedro da Veiga Zubek  
 **Disciplina:** Sistemas de Software Livre   
 
@@ -8,24 +6,26 @@
 ### 1. Compilação:
 Use o Makefile para compilar todos os programas ou individualmente:
 
-```bash
+```
 make          # Compila todos os programas
 make primo    # Compila apenas primo.cpp
 make vetor    # Compila apenas vetor.cpp
 make matriz   # Compila apenas matriz.cpp
 make clean    # Remove os executáveis gerados
+```
 
-2. Execução dos Programas:
-
+### 2. Execução dos Programas:
 Após compilar, execute os programas:
 
+```
 ./primo
 ./vetor
 ./matriz
+```
 
-3. Testes Automatizados
+### 3. Testes Automatizados:
 
-Gere arquivos de teste e execute:
+```
 # Dar permissão aos scripts
 chmod +x generate-test-*.sh
 
@@ -38,11 +38,13 @@ chmod +x generate-test-*.sh
 ./primo < teste1-primo.in
 ./vetor < teste1-vetor.in
 ./matriz < teste1-matriz.in
+```
 
+### -Descrição dos Programas-
 
--Descrição dos Programas-
+**(primo.cpp)**
 
-(primo.cpp)
+```
 Função: Verifica se um número é primo
 Entrada: Um número inteiro via stdin
 Saída: "Primo" ou "Não é primo"
@@ -51,8 +53,11 @@ Exemplo:
 bash---
 echo 7 | ./primo
 
+```
 
-(vetor.cpp)
+**(vetor.cpp)**
+
+```
 Função: Encontra o maior valor em um vetor
 Entrada:
  Primeiro: tamanho do vetor (n)
@@ -63,8 +68,11 @@ Exemplo:
 bash---
 echo -e "3\n5 1 9" | ./vetor
 
+```
 
-(matriz.cpp)
+**(matriz.cpp)**
+
+```
 Função: Calculadora de matrizes (soma, subtração e multiplicação)
 Entrada:
  Tamanho da matriz (n)
@@ -76,24 +84,32 @@ Saída: Matriz resultante
 Exemplo:
 bash---
 echo -e "2\n1 2\n3 4\n5 6\n7 8\na" | ./matriz
+```
 
+### -Scripts de Teste-
 
+**(generate-test-primo.sh)**
+```
 
--Scripts de Teste-
-
-generate-test-primo.sh
 Gera um número aleatório entre 1 e 1000 em testeN-primo.in
+```
 
-generate-test-vetor.sh
+**(generate-test-vetor.sh)**
+```
+
 Gera:
  Tamanho aleatório do vetor (1-100)
  Elementos aleatórios (0-1000)
 Salva em testeN-vetor.in
+```
 
-generate-test-matriz.sh
+**(generate-test-matriz.sh)**
+```
 
 Gera:
  Tamanho aleatório da matriz (1-100)
  Duas matrizes com valores 0-1000
  Operação aleatória (a/s/m)
 Salva em testeN-matriz.in
+
+```
