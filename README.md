@@ -3,17 +3,6 @@
 **Aluno:** João Pedro da Veiga Zubek  
 **Disciplina:** Sistemas de Software Livre   
 
-## 📁 Estrutura do Projeto
-.
-├── Makefile
-├── README.md
-├── generate-test-matriz.sh
-├── generate-test-primo.sh
-├── generate-test-vetor.sh
-├── matriz.cpp
-├── primo.cpp
-└── vetor.cpp
-
 ## 🔧 Como Usar
 
 ### 1. Compilação:
