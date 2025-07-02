@@ -50,7 +50,7 @@ Entrada: Um número inteiro via stdin
 Saída: "Primo" ou "Não é primo"
 
 Exemplo:
-bash---
+bash
 echo 7 | ./primo
 
 ```
@@ -65,7 +65,7 @@ Entrada:
 Saída: O maior número do vetor
 
 Exemplo:
-bash---
+bash
 echo -e "3\n5 1 9" | ./vetor
 
 ```
@@ -82,7 +82,7 @@ Entrada:
 Saída: Matriz resultante
 
 Exemplo:
-bash---
+bash
 echo -e "2\n1 2\n3 4\n5 6\n7 8\na" | ./matriz
 ```
 
@@ -91,7 +91,9 @@ echo -e "2\n1 2\n3 4\n5 6\n7 8\na" | ./matriz
 **(generate-test-primo.sh)**
 ```
 
-Gera um número aleatório entre 1 e 1000 em testeN-primo.in
+Gera:
+ Um número aleatório entre 1 e 1000 
+Salva em: teste(N)-primo.in
 ```
 
 **(generate-test-vetor.sh)**
@@ -100,16 +102,16 @@ Gera um número aleatório entre 1 e 1000 em testeN-primo.in
 Gera:
  Tamanho aleatório do vetor (1-100)
  Elementos aleatórios (0-1000)
-Salva em testeN-vetor.in
+Salva em: teste(N)-vetor.in
 ```
 
 **(generate-test-matriz.sh)**
 ```
 
 Gera:
- Tamanho aleatório da matriz (1-100)
- Duas matrizes com valores 0-1000
- Operação aleatória (a/s/m)
-Salva em testeN-matriz.in
+ Tamanho aleatório da matriz (1-100) 
+ Duas matrizes com valores 0-1000 (Sendo N o tamanho das matrizes, coloque N*N valores para cada Matriz)
+ Operação aleatória (a/s/m) (a-adição|s-subtração|m-multipicação)
+Salva em: teste(N)-matriz.in
 
 ```
