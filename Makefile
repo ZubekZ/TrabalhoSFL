@@ -11,7 +11,7 @@ BIN_PRIMO = primo
 BIN_VETOR = vetor
 BIN_MATRIZ = matriz
 
-# Regra padrão: compilar todos
+# Regra padrão: compilar todos os cpp
 all: $(BIN_PRIMO) $(BIN_VETOR) $(BIN_MATRIZ)
 
 # Compilações individuais
@@ -23,6 +23,9 @@ $(BIN_VETOR): $(SRC_VETOR)
 
 $(BIN_MATRIZ): $(SRC_MATRIZ)
 	$(CXX) $(CXXFLAGS) $< -o $@
+
+# Regra para gerar TODOS os arquivos de teste de uma vez
+generate-tests: test-primo test-vetor test-matriz
 
 # Gerar testes
 test-primo:
