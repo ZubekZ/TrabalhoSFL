@@ -7,10 +7,21 @@
 Use o Makefile para compilar todos os programas ou individualmente:
 
 ```
+-------------------------------------------------
 make          # Compila todos os programas
 make primo    # Compila apenas primo.cpp
 make vetor    # Compila apenas vetor.cpp
 make matriz   # Compila apenas matriz.cpp
+--------------------------------------------------
+make generate-tests # Executa todos os scripts de geração de testes em sequência 
+make test-primo # Gera casos de teste apenas para o programa primo.
+make test-vetor # Gera casos de teste apenas para o programa vetor.
+make test-matriz # Gera casos de teste apenas para o programa matriz.
+--------------------------------------------------
+make run-primo # Executa o programa primo, passando como entrada o arquivo teste*-primo.in de maior número
+make run-vetor # Executa o programa vetor, passando como entrada o arquivo teste*-vetor.in de maior número.
+make run-matriz # Executa o programa matriz, passando como entrada o arquivo teste*-matriz.in de maior número.
+--------------------------------------------------
 make clean    # Remove os executáveis gerados
 ```
 
